@@ -3,7 +3,7 @@
 // Copyright (c) Microsoft Open Technologies, Inc.  All rights reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 
 module.exports = function (ctx) {
-    var path = ctx.requireCordovaModule('path');
+    var path = require('path');
 
     // Processing USE_CORPORATE_NETWORK plugin variable
     var useCorporateNetwork = false;
@@ -27,9 +27,9 @@ module.exports = function (ctx) {
 
         var ssoPluginPath = path.join(ctx.opts.projectRoot, 'plugins/cordova-plugin-ms-adal/src/windows/sso');
 
-        var plugman = ctx.requireCordovaModule('../plugman/plugman');
+        var plugman = require('../plugman/plugman');
 
-        plugman.install(plugmanInstallOpts.platform, plugmanInstallOpts.project, 
+        plugman.install(plugmanInstallOpts.platform, plugmanInstallOpts.project,
             ssoPluginPath, plugmanInstallOpts.plugins_dir);
     }
 };

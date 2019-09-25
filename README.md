@@ -1,3 +1,7 @@
+> **IMPORTANT NOTICE:**
+> This is a fork of original, now discontinued and unmaintianed version of this plugin.
+> I've fork it only to make it work with cordova 9, so it includes only a small set of fixes - I will **not** maintain this repo in the future.
+
 # Active Directory Authentication Library (ADAL) plugin for Apache Cordova apps
 
 [![Build status](https://ci.appveyor.com/api/projects/status/hslf0dq6i33p320v/branch/master?svg=true)](https://ci.appveyor.com/project/adal-for-cordova-bot/azure-activedirectory-library-for-cordova/branch/master)
