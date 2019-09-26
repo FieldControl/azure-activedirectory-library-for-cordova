@@ -22,11 +22,11 @@ module.exports = function (ctx) {
         return;
     };
 
-    var fs = ctx.requireCordovaModule('fs');
-    var path = ctx.requireCordovaModule('path');
-    var xcode = ctx.requireCordovaModule('xcode');
+    var fs = require('fs');
+    var path = require('path');
+    var xcode = require('xcode');
 
-    var deferral = new ctx.requireCordovaModule('q').defer();
+    var deferral = new require('q').defer();
 
     var platformRoot = path.join(ctx.opts.projectRoot, 'platforms', 'ios');
 
@@ -38,7 +38,7 @@ module.exports = function (ctx) {
         iosProjectFile = require(path.join(ctx.opts.projectRoot, 'platforms/ios/cordova/lib/projectFile'));
     } catch (ex) {
         // fallback to cordova-lib (shared platform functionality)
-        iosProjectFile = ctx.requireCordovaModule('../plugman/platforms/ios');
+        iosProjectFile = require('../plugman/platforms/ios');
     }
 
     fs.readdir(platformRoot, function (err, data) {

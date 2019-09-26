@@ -3,14 +3,14 @@
  Copyright (c) Microsoft Open Technologies, Inc.  All Rights Reserved.
  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 -->
-<plugin id="cordova-plugin-ms-adal" version="0.10.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-ms-adal" version="0.10.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>ADAL for Cordova</name>
     <description>Provides Microsoft Azure Active Directory (ADAL) OAuth client.</description>
 
     <license>Apache 2.0</license>
     <keywords>microsoft, azure, adal, activedirectory</keywords>
-    <repo>https://github.com/AzureAD/azure-activedirectory-library-for-cordova</repo>
-    <issue>https://github.com/AzureAD/azure-activedirectory-library-for-cordova/issues</issue>
+    <repo>https://github.com/alesrosina/azure-activedirectory-library-for-cordova</repo>
+    <issue>https://github.com/alesrosina/azure-activedirectory-library-for-cordova/issues</issue>
 
     <dependency id="cordova-plugin-compat" version="^1.0.0" />
 
