@@ -26,8 +26,8 @@ Once you’ve updated plugin to the latest version your application will continu
 - run the following commands:
 
     ```
-    cordova plugin rm cordova-plugin-ms-adal --save
-    cordova plugin add cordova-plugin-ms-adal@0.8.x --save
+    cordova plugin rm cordova-plugin-ms-adal-fork --save
+    cordova plugin add cordova-plugin-ms-adal-fork@0.8.x --save
     ```
 
 ## Community Help and Support
@@ -279,7 +279,7 @@ To run the tests you need to create a new application as described in [Installat
     ```
 
 * Update application's config.xml file: change `<content src="index.html" />` to `<content src="cdvtests/index.html" />`
-* Change AD-specific settings for test application at the beginning of `plugins\cordova-plugin-ms-adal\www\tests.js` file. Update `AUTHORITY_URL`, `RESOURCE_URL`, `REDIRECT_URL`, `APP_ID` to values, provided by your Azure AD. For instructions how to setup an Azure AD application see [Setting up an Application in Azure AD section](#setting-up-an-application-in-azure-ad).
+* Change AD-specific settings for test application at the beginning of `plugins\cordova-plugin-ms-adal-fork\www\tests.js` file. Update `AUTHORITY_URL`, `RESOURCE_URL`, `REDIRECT_URL`, `APP_ID` to values, provided by your Azure AD. For instructions how to setup an Azure AD application see [Setting up an Application in Azure AD section](#setting-up-an-application-in-azure-ad).
 * Build and run application.
 
 ## Windows Quirks ##

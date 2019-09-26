@@ -25,7 +25,7 @@ module.exports = function (ctx) {
             project: path.join(ctx.opts.projectRoot, 'platforms', 'windows')
         };
 
-        var ssoPluginPath = path.join(ctx.opts.projectRoot, 'plugins/cordova-plugin-ms-adal/src/windows/sso');
+        var ssoPluginPath = path.join(ctx.opts.projectRoot, 'plugins/cordova-plugin-ms-adal-fork/src/windows/sso');
 
         var plugman = require('../plugman/plugman');
 

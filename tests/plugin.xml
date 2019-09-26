@@ -3,7 +3,7 @@
  Copyright (c) Microsoft Open Technologies, Inc.  All Rights Reserved.
  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 -->
-<plugin id="cordova-plugin-ms-adal-tests" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-ms-adal-fork-tests" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 
     <dependency id="cordova-plugin-test-framework"/>
 

@@ -6,12 +6,12 @@ module.exports = function (ctx) {
     var shell = require('shelljs');
     var path = require('path');
     var fs = require('fs');
-    var helperPluginId = 'cordova-plugin-ms-adal-sso';
+    var helperPluginId = 'cordova-plugin-ms-adal-fork-sso';
 
     // Read config.xml -> extract adal-use-corporate-network variable value; default it to false
     var useCorporateNetwork = false;
     var configXml = shell.ls(path.join(ctx.opts.projectRoot, 'platforms/windows/config.xml'))[0];
-    var pluginXml = shell.ls(path.join(ctx.opts.projectRoot, 'plugins/cordova-plugin-ms-adal/plugin.xml'))[0];
+    var pluginXml = shell.ls(path.join(ctx.opts.projectRoot, 'plugins/cordova-plugin-ms-adal-fork/plugin.xml'))[0];
 
     var rePreferenceValue = /<preference\s+name="adal-use-corporate-network"\s+value="(.+)"\s*\/>/i;
     var preferenceValue = shell.grep(rePreferenceValue, configXml);
@@ -26,7 +26,7 @@ module.exports = function (ctx) {
     var ssoPluginInstallPath = path.join(ctx.opts.projectRoot, 'plugins', helperPluginId);
     var ssoPluginDepEnabled = fs.existsSync(ssoPluginInstallPath);
 
-    var ssoPluginPath = path.join(ctx.opts.projectRoot, 'plugins/cordova-plugin-ms-adal/src/windows/sso');
+    var ssoPluginPath = path.join(ctx.opts.projectRoot, 'plugins/cordova-plugin-ms-adal-fork/src/windows/sso');
 
     var plugmanInstallOpts = {
         plugins_dir: path.join(ctx.opts.projectRoot, 'plugins'),
