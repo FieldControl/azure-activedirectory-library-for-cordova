@@ -12,8 +12,6 @@
     <repo>https://github.com/alesrosina/azure-activedirectory-library-for-cordova</repo>
     <issue>https://github.com/alesrosina/azure-activedirectory-library-for-cordova/issues</issue>
 
-    <dependency id="cordova-plugin-compat" version="^1.0.0" />
-
     <engines>
         <!-- Required gradle functionality support -->
         <engine name="cordova-android" version=">=4.1.0" />
